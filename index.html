@@ -1,7 +1,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
     
     <title>
          
-            Burlington, WA - Customer First Pressure Washing &amp; Gutter Cleaning | Oliver Maintenance
+            Burlington, WA - Customer First Roof Cleaning &amp; Pressure Washing | Oliver Maintenance
         
     </title>
     <meta name="description" content="Schedule your free quote today! Proudly serving 
@@ -38,20 +37,20 @@
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
     
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
-     <!-- <script src="/staticfiles/landing_page_gen/render.js"></script>   -->
+    
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script> 
 </head>
 
 <body>
 
-<div class = "flex w-full flex-col">  
-    
 
-<div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+
+<div class = "flex w-full flex-col">  
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-black text-white  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href= " index "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FQOSEFATJYYT1E7GGZ56OH46HJJM0LL88JLHZU5K.jpeg" alt="Oliver Maintenance logo"> </a>
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FQOSEFATJYYT1E7GGZ56OH46HJJM0LL88JLHZU5K.jpeg" alt="Oliver Maintenance logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -60,65 +59,46 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-center ">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
     
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="index">About Us
+    href="#about">About Us
 </a>
       
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="services">Our Services
+    href="#services">Our Services
 </a>
- 
+     
       
-        
-
-<div id='mobile-dropdown-parent' onclick='toggleDropDownMobile()' class="px-4 py-2 mt-2 text-lg font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 group flex flex-col relative ">
-    <div> Galleries
-        <i class="fa fa-caret-down"></i>
-    </div>
-    <!-- for desktop -->
-    <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Roof-Cleaning"> Roof Cleaning </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Gutter-Cleaning"> Gutter Cleaning </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Power-Washing"> Power Washing </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Other-Services"> Other Services </a>
-        
-    </div> 
-    <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
-    <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Roof-Cleaning"> Roof Cleaning </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Gutter-Cleaning"> Gutter Cleaning </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Power-Washing"> Power Washing </a>
-        
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Other-Services"> Other Services </a>
-        
-    </div> 
-
-</div>
-
-
-  
-      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#our-work">Our Best Work
+</a>
+     
            
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="testimonials">Testimonials &amp; Reviews
+    href="#testimonials">Testimonials &amp; Reviews
 </a>
  
-              
+         
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#faqs">FAQs
+</a>
+     
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#find-us">Service Areas
+</a>
+   
     
   
 
@@ -128,7 +108,7 @@
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -151,7 +131,7 @@
 
          
         onclick= "send_sms(0, 'Oliver-Maintenance')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-gray-400   hover:text-black  rounded-lg">Send</button> 
         </div>           
 
     </form>
@@ -162,10 +142,8 @@
     </nav>
   </div>
 </div>
-
-
     <section   style= "background-color:#0f72b6"  
-class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
+class="flex relative flex-col w-full  bg-white text-black  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
     <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
             <h2 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
@@ -173,7 +151,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
             </h2>
             
             <h1 class="pt-5 lg:text-xl text-center lg:text-left">
-                Customer first pressure washing &amp; gutter cleaning in  Burlington & surrounding areas.  Exceptional, Professional Cleaning Service. You Are Our Priority.
+                Customer first roof cleaning &amp; pressure washing in  Burlington & surrounding areas.  Exceptional, Professional Cleaning Service. You Are Our Priority.
             </h1>
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
@@ -188,7 +166,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div id="cover-button" class="w-full lg:w-auto ">
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  
@@ -199,12 +177,12 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
  id="" type="button" x-on:click.prevent="open = true" class=" 
   w-full lg:w-auto 
 
-    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-gray-400   hover:text-black  z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -227,7 +205,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
 
          
         onclick= "send_sms(1, 'Oliver-Maintenance')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-gray-400   hover:text-black  rounded-lg">Send</button> 
         </div>           
 
     </form>
@@ -239,7 +217,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div>
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  
@@ -250,12 +228,12 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
-   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-gray-400   hover:text-black  z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -278,7 +256,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
 
          
         onclick= "send_sms(2, 'Oliver-Maintenance')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-gray-400   hover:text-black  rounded-lg">Send</button> 
         </div>           
 
     </form>
@@ -303,7 +281,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
         
 </section>
     <section  style= "color:#0f72b6 "   id = "about" 
-class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-gray-900 ">
+class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-black text-white ">
         <div class="relative lg:w-1/2">
         
             
@@ -396,12 +374,13 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <br>
     </div>
 
+                
             
             </div>
             
                 <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
                 
-                    <h2  style= "color:#0f72b6 "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
+                    <h2  style= "color:#0f72b6 "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-black-900 font-extrabold leading-none tracking-wide text-center">
                         Connect with us on Social
                     </h2>
                 
@@ -457,6 +436,603 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
     </section>
     
+    
+    
+    <section  style= "background-color:#0f72b6"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-white text-black  border-solid ">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
+            
+            <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Our Services
+            </h2>
+            <h2  style= "color:#383637"  class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-black-200 lg:text-lg md:text-base">
+                What we are best at  - expert  roof cleaning &amp; pressure washing 
+                
+            </h2>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Window Cleaning</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Beautiful windows so clean you will be able to see your reflection. Streak-free, polished, and shining - we deliver the highest quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Decks & Patios</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Make your deck and patios look brand new after the winter weather. It will really make your backyard pop!
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Roof Cleaning</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                A clean roof leaves your house looking beautiful and helps prolong roof life. You can count on us to get a thorough job, professionally and well done.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Home Softwash</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                When it comes to your home it is critical that you not only wash it but also ensure a safe technique when doing so. Our softwash will remove grime without risking damage.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Gutter Cleaning</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Ensuring that your gutters are clean not only improves the look of your property but prevents water damage. We have the experience and equipment to make your gutters look new again. 
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Pressure Washing Services</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                We offer a variety of pressure washing services. If you don't see one listed, give us a text or call to learn more. 
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-black-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-black-200 ">
+                            <h3  style= "color:#383637"  class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-gray-800   ">Holiday Lighting</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                We offer holiday lighting installation for residential and commercial properties. Custom fit holiday lights to fit your property perfectly. 
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-black text-white  md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2  style= "color:#0f72b6" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+            <h2  style= "color:#383637" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/FZQTSAKMPP45JFGQ56ZZDM22DB4CA6ZA7OJGASIX.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/7249ULF6BVY9TEG6PJP0Y9XEE7G7MG4G8S83KZOP.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1ON5Q80FKWLLPPJAU4M28O84H9TBITYJFYD402KM.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JV7Z08DDOTOCZZPYUNRTDKNM81IC7IMKBX42DK5C.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/4107BULC4UBYA1XROF80PSB0QMQBWWDZCD0WTLUG.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/NGV984REJVDY54WRS010RSJYXK96Q97MLYKAGWZ2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/NEEIYBH56OB65LZKFR25H4FSGHYM0E30FVF0452O.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LXRRSPZJQ1RAA77PL9A2LAZIR8VCTXKSOXJNGCLY.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/YD3TA7TPWH3LDFFJAXDOP7XKVM7HF0FFZWGHEAWK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HIM08OYWTG78Z6WLJO47SR7K8E7VK1139GC810CP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BNEUAP2TTT0I04PWAV7O3OVH8DZ50RRO2V3ATDG6.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DR6IPGG2XRNHHR9O7PZSIPFZQVQQ3RNE6CJLR26J.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C8UZC4OWV020S8ZQW5XYUP4JQATBN1YAQ1KASZTZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BKRI6XT8LGF53VV6RJAMS0BTHSIFZCO6BR3N0BPU.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ELYPSYT9ED43CDWKDLKRHXCM7VU8YJOUZJYF8LQW.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/4ACU9TYCFHMU5NV40LB9VE4MS0Q6EFZRU91AN6EP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1FT2TC0U3D3VV1GR9QV6LOS7IPZZZII17M1UKAZ7.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/FWIS0JU6LS2DR1L72K79LW4DU1SW6FXAAH6J5KN4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/INSR8E24SG5F8E68DHTYBL29AJAJIBJHBSXFULO8.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JMKY1IFRXZMUDR8HAQ44NLSNB822ODUQX9DRU1AZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ZVNKEBT2FGORF77DZZMIH01IIKK1TYX4SKA3GOFE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/2W3WI0O87YEU8J63X6YUPJA5971W5K00MNF9PC0D.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/KPJMPL2I3YW04CIZ1UXYEOJ4R52ZSZ6FQI2XKB31.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F5V7UT2F3M2RVF4ZU7K0YLSGVYZJ5NFMN72XMIZQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/6QJPKD8P475T1G5MAVF4W0JWKUDSEWTVADH91TUE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/4VAJC5AI85B72K0VPP8YOAWFGG5HEM2AGLYUK81A.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/03QGVM13IWLIJ4Y093793K6ELFJ5UHEDB61N6TWP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/M38UY1H3QB2K8M6DZTR7Q1G0NRIXWY3GMBLCVP3M.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/6ZAUA1BE052LSUOXMS9HM30NMJ5J3TPDHXQG5ZPT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JD9KMR7I4X0GOFEHIQEFTUISP6UKP8HNC7MRIDDT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/PP99I34AE15WTOYJAI4E83ZDFU3E5DCE6AKRBIKU.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LMUGESK2PA3DPW2AU0LBZ6IMTV41RCA553MWLZMV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HGMSQWSDXPLPC0UK2QJ0FRA2W5A6QKR2GDC5B5SX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SR8UEE787DZQI37P8Y2HLQ27XPFBJJWNV2543FI1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SKYXDZ9X36SARJIY35SK67FNHI5BJ5QRTC42QF27.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3WYA66G3YJR8KX5WRMOV0HMDGHMLUP866IK4B3VC.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FZQTSAKMPP45JFGQ56ZZDM22DB4CA6ZA7OJGASIX.png"  alt = "Photo number 1 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7249ULF6BVY9TEG6PJP0Y9XEE7G7MG4G8S83KZOP.png"  alt = "Photo number 2 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1ON5Q80FKWLLPPJAU4M28O84H9TBITYJFYD402KM.png"  alt = "Photo number 3 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JV7Z08DDOTOCZZPYUNRTDKNM81IC7IMKBX42DK5C.png"  alt = "Photo number 4 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4107BULC4UBYA1XROF80PSB0QMQBWWDZCD0WTLUG.png"  alt = "Photo number 5 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGV984REJVDY54WRS010RSJYXK96Q97MLYKAGWZ2.jpeg"  alt = "Photo number 6 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NEEIYBH56OB65LZKFR25H4FSGHYM0E30FVF0452O.png"  alt = "Photo number 7 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LXRRSPZJQ1RAA77PL9A2LAZIR8VCTXKSOXJNGCLY.png"  alt = "Photo number 8 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/YD3TA7TPWH3LDFFJAXDOP7XKVM7HF0FFZWGHEAWK.jpeg"  alt = "Photo number 9 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HIM08OYWTG78Z6WLJO47SR7K8E7VK1139GC810CP.jpeg"  alt = "Photo number 10 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BNEUAP2TTT0I04PWAV7O3OVH8DZ50RRO2V3ATDG6.jpeg"  alt = "Photo number 11 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DR6IPGG2XRNHHR9O7PZSIPFZQVQQ3RNE6CJLR26J.jpeg"  alt = "Photo number 12 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C8UZC4OWV020S8ZQW5XYUP4JQATBN1YAQ1KASZTZ.jpeg"  alt = "Photo number 13 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BKRI6XT8LGF53VV6RJAMS0BTHSIFZCO6BR3N0BPU.jpeg"  alt = "Photo number 14 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ELYPSYT9ED43CDWKDLKRHXCM7VU8YJOUZJYF8LQW.jpeg"  alt = "Photo number 15 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4ACU9TYCFHMU5NV40LB9VE4MS0Q6EFZRU91AN6EP.jpeg"  alt = "Photo number 16 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1FT2TC0U3D3VV1GR9QV6LOS7IPZZZII17M1UKAZ7.jpeg"  alt = "Photo number 17 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FWIS0JU6LS2DR1L72K79LW4DU1SW6FXAAH6J5KN4.jpeg"  alt = "Photo number 18 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/INSR8E24SG5F8E68DHTYBL29AJAJIBJHBSXFULO8.jpeg"  alt = "Photo number 19 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JMKY1IFRXZMUDR8HAQ44NLSNB822ODUQX9DRU1AZ.jpeg"  alt = "Photo number 20 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZVNKEBT2FGORF77DZZMIH01IIKK1TYX4SKA3GOFE.jpeg"  alt = "Photo number 21 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 21; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2W3WI0O87YEU8J63X6YUPJA5971W5K00MNF9PC0D.jpeg"  alt = "Photo number 22 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 22; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KPJMPL2I3YW04CIZ1UXYEOJ4R52ZSZ6FQI2XKB31.jpeg"  alt = "Photo number 23 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 23; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F5V7UT2F3M2RVF4ZU7K0YLSGVYZJ5NFMN72XMIZQ.jpeg"  alt = "Photo number 24 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 24; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6QJPKD8P475T1G5MAVF4W0JWKUDSEWTVADH91TUE.jpeg"  alt = "Photo number 25 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 25; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4VAJC5AI85B72K0VPP8YOAWFGG5HEM2AGLYUK81A.jpeg"  alt = "Photo number 26 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 26; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/03QGVM13IWLIJ4Y093793K6ELFJ5UHEDB61N6TWP.jpeg"  alt = "Photo number 27 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 27; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/M38UY1H3QB2K8M6DZTR7Q1G0NRIXWY3GMBLCVP3M.jpeg"  alt = "Photo number 28 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 28; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6ZAUA1BE052LSUOXMS9HM30NMJ5J3TPDHXQG5ZPT.jpeg"  alt = "Photo number 29 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 29; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JD9KMR7I4X0GOFEHIQEFTUISP6UKP8HNC7MRIDDT.jpeg"  alt = "Photo number 30 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 30; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PP99I34AE15WTOYJAI4E83ZDFU3E5DCE6AKRBIKU.jpeg"  alt = "Photo number 31 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 31; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LMUGESK2PA3DPW2AU0LBZ6IMTV41RCA553MWLZMV.jpeg"  alt = "Photo number 32 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 32; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HGMSQWSDXPLPC0UK2QJ0FRA2W5A6QKR2GDC5B5SX.jpeg"  alt = "Photo number 33 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 33; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SR8UEE787DZQI37P8Y2HLQ27XPFBJJWNV2543FI1.jpeg"  alt = "Photo number 34 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 34; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SKYXDZ9X36SARJIY35SK67FNHI5BJ5QRTC42QF27.jpeg"  alt = "Photo number 35 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 35; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3WYA66G3YJR8KX5WRMOV0HMDGHMLUP866IK4B3VC.jpeg"  alt = "Photo number 36 of Oliver Maintenance&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                 
+                                    
+        
+                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
+
+
+                
+                
+                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
+                    <button
+                     style= "background-color:#383637" 
+                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-gray-400"                                
+                            @click="open = false">
+                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
+                    </button>
+                    </div>
+
+                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                        <template  x-for="(slide, index, collection) in slides" :key="index">
+                            <div class="h-full w-full flex items-center justify-center absolute">
+                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                    x-show="activeSlide === index" 
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 transform scale-90"
+                                    x-transition:enter-end="opacity-100 transform scale-100"
+                                    x-transition:leave="transition ease-in duration-150"
+                                    x-transition:leave-start="opacity-100 transform scale-100"
+                                    x-transition:leave-end="opacity-0 transform scale-90">
+
+                                    <template x-if="slide[1] === 'photo' ">
+                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                    </template>
+                                    
+                                    <template x-if="slide[1] != 'photo'  ">
+                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        </video>
+                                    </template> 
+                                    
+                                </div>
+                                <div  style= "color:#383637"  class="fixed text-gray-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                    x-show="activeSlide === index">
+                                    <span class="w-12 text-right" x-text="index + 1"></span>
+                                    <span class="w-4 text-center">/</span>
+                                    <span class="w-12 text-left" x-text="slides.length"></span>
+                                </div>
+                            </div>
+                        </template>
+
+                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
+                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                        <button 
+                                type="button"
+                                 style= "background-color:#383637" 
+                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-gray-400" 
+                               
+                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                           
+                        </button>
+                        </div>
+                        <div class="flex items-center justify-start w-12 md:ml-16">
+                        <button 
+                                type="button"
+                                 style= "background-color:#383637" 
+                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-gray-400   "
+                               
+                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                        </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>     
+
+            
+</div>
+
+        
+    
+    
+    <div  style= "background-color:#0f72b6"  id= "testimonials" class=" flex items-center justify-center  bg-white text-black   py-20 min-w-screen px-4">
+        <div class="px-16 ">
+            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
+                <div class = "sm:mb-4 md:mb-0">
+                <h2  style= "color:#383637"  class="relative flex  text-gray-400 text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</h2>
+                </div>
+
+
+                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center ">
+                    
+                    Testimonials &amp; Reviews</h2>
+                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+                
+                
+
+                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-black  ">Judith McKenna</h3>
+                            <h3 class=" text-black ">Burlington, WA  , Decks &amp; Patios  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"Oliver Maintenance did an amazing job at the beach cabin... prompt, professional and top quality work! Everyone, support this great and local small business."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-black  ">DeeAnna Emmons Beh</h3>
+                            <h3 class=" text-black ">Burlington, WA  , Pressure Washing Services  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"I messaged Oliver Maintenance on FB and received a reply promptly. Danny assessed the issue, gave me an estimate, gave me a time frame, and got the job done! Very professional."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-black  ">Katie Zimmerman</h3>
+                            <h3 class=" text-black ">Burlington, WA  , Roof Cleaning  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"Highly recommend Danny with Oliver Maintenance! My family owns Cascade Roofing Company and we refer all of our roof and gutter cleanings to him as he does a great job at a reasonable price and is very prompt! It’s been great to have a reliable local small business to refer our customers too, especially during our very busy roofing season when we don’t have the availability to do cleanings ourselves. Our customers call us back to thank us for the great referral! Thanks Danny for always providing our (now mutual)  customers with the best customer service and cleanings in the Valley!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-black  ">Chris J Johnson</h3>
+                            <h3 class=" text-black ">Burlington, WA  , Roof Cleaning  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"Oliver maintenance cleaned and remove the moss buildup on my roof and even repaired my gutters.  Great service and professionalism."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                </div>  
+                
+                <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
+                
+                <a target= "_blank" href="https://www.google.com/maps/place/Oliver+Maintenance/@48.4778699,-122.3230027,15z/data=!4m7!3m6!1s0x0:0xadd693868066c07d!8m2!3d48.4778699!4d-122.3230027!9m1!1b1"  class="w-full">
+                    <button  
+                onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f72b6' "
+                onMouseOut="this.style.backgroundColor='#383637'; this.style.color='white'"
+                style="background-color:#383637; color:white"               
+                
+                   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-gray-400  hover:text-black ">
+                            <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
+                    </button>
+                </a>
+                
+             
+                
+                <a target= "_blank" href="https://www.facebook.com/olivermaintenance2020/reviews/?ref=page_internal" class="w-full">
+                    <button  
+                onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f72b6' "
+                onMouseOut="this.style.backgroundColor='#383637'; this.style.color='white'"
+                style="background-color:#383637; color:white"               
+                
+                  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-gray-400  hover:text-black ">
+                            <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
+                    </button>
+                </a>
+               
+            </div>
+
+                         
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<section id= "faqs" class="py-16   bg-black text-white  md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2  style= "color:#0f72b6"  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">FAQs</h2>
+         <h2  style= "color:#383637"  class="my-3 mb-10  text-xl font-medium  text-gray-400 text-center">Your questions answered</h2>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-black-100 select-none">
+                <h3  
+                onMouseOver="this.style.color='#383637' "
+                onMouseOut=" this.style.color='#0f72b6'"
+                style="color:#0f72b6;"               
+                
+                                 
+                @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-black-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-400  lg:text-left">
+                    <span class = "flex text-left lg:text-left">What's the best way to reach you?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p  style= "color:#0f72b6"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-black-900 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>The best way to get in touch is to call or text (360) 399-0627. We provide personal attention to every customer.</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+    
 
 <div id="service-area-array" class = "hidden">
 
@@ -468,7 +1044,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
 </div> 
 
-<section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
+<section id="find-us" class="py-16   text-white bg-black  md:py-20 lg:py-20">
 
    
    
@@ -491,12 +1067,11 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 </section>
 
 
-    
 
-<section  style= "background-color:#0f72b6"   class="py-10 bg-gray-900">
+    <section  style= "background-color:#0f72b6"   class="py-10 bg-black-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
-            <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
+            <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class=" text-black ">ProPhone</a>. Built with ❤️ by our team. </p>
              
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
                 <li> <a  style= "color:#383637"  href="#about" class="px-2 md:px-4 text-gray-400 hover:text-white">About Us</a> </li>
@@ -519,7 +1094,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
             </ul>
         </div>
     </div>
-</section> 
+</section>     
 </div> 
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
